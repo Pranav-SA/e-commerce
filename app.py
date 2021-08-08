@@ -3,7 +3,9 @@ This file contains URL routes for e-commerce API.
 Author: Manika Arora
 """
 
-from flask import Flask
+import json
+from core.checkout import checkout
+from flask import Flask, request, make_response
 app = Flask(__name__)
 
 
@@ -24,7 +26,26 @@ def get_app():
 def home():
     return "Welcome to e-commerce sample API."
 
-# Add Checkout route
+
+# Checkout route
+@app.route("/checkout", methods=['POST'])
+def checkout_api():
+    """
+    This is the checkout API.
+    """
+    input_json = request.get_json()
+    print("Input received...")
+
+    # Function call for checkout action
+    output = dict()
+    output = checkout(input_json['id_list'])
+
+    output = json.dumps(output)
+
+    r = make_response(output)
+    r.content_type = 'application/json'
+
+    return r
 
 
 if __name__ == '__main__':
