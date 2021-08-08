@@ -24,4 +24,5 @@ __docker build . -t ecommercetest__
 __docker run -it -p 8080:8080 ecommercetest__
 
 The /checkout api will now be available at http://127.0.0.1:8080/checkout
+
 6. For testing the API, install POSTMAN app and import the ecommerce test.postman_collection.json. This contains sample API calls for testing.
