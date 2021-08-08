@@ -4,11 +4,17 @@ This repository contains sample API for performing checkout action for e-commerc
 
 ### Folder structure
 __core__ contains the function file 'checkout.py' used for calculating total price of the watches in the input list
+
 __data__ contains the watch catalogue as a json file
+
 __test__ contains unit tests for 'checkout.py'
+
 __Dockerfile__ for creating an image and running the app
+
 __app.py__ file containing the URL route for checkout action
+
 __requirements.txt__ file containing list of libraries used
+
 __ecommerce test.postman_collection.json__ Postman collection with sample /checkout API calls for testing
 
 ### How to run and test the APIs?
