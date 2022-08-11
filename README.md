@@ -22,7 +22,7 @@ __ecommerce test.postman_collection.json__ Postman collection with sample /check
 
 2. Clone this repo 
 
-3. Open a powershell/ terminal window and navigate to the 'e-commerce' directory
+3. Open a powershell/ terminal window and navigate to the 'e-commerce' directory (use sudo in terminal)
 
 4. Run the following command to build the docker image. The name of the image created will be 'ecommercetest'
 
